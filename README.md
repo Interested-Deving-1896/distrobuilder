@@ -1,121 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # distrobuilder
-System container and VM image builder for Incus and LXC.
 
-## Status
-Type            | Service               | Status
----             | ---                   | ---
-CI              | GitHub                | [![Build Status](https://github.com/lxc/distrobuilder/workflows/Tests/badge.svg)](https://github.com/lxc/distrobuilder/actions)
-Project status  | CII Best Practices    | [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1728/badge)](https://bestpractices.coreinfrastructure.org/projects/1728)
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/distrobuilder)
 
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Command line options
+## Architecture
 
-<!-- Include start CLI -->
-The following are the command line options of `distrobuilder`. You can use `distrobuilder` to create container images for both Incus and LXC.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
+
+## Install
+
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
 ```bash
-$ distrobuilder
-System container and VM image builder for Incus and LXC
-
-Usage:
-  distrobuilder [command]
-
-Available Commands:
-  build-dir      Build plain rootfs
-  build-incus    Build Incus image from scratch
-  build-lxc      Build LXC image from scratch
-  help           Help about any command
-  pack-incus     Create Incus image from existing rootfs
-  pack-lxc       Create LXC image from existing rootfs
-  repack-windows Repack Windows ISO with drivers included
-
-Flags:
-      --cache-dir         Cache directory
-      --cleanup           Clean up cache directory (default true)
-      --debug             Enable debug output
-      --disable-overlay   Disable the use of filesystem overlays
-  -h, --help              help for distrobuilder
-  -o, --options           Override options (list of key=value)
-  -t, --timeout           Timeout in seconds
-      --version           Print version number
-
-Use "distrobuilder [command] --help" for more information about a command.
-
-```
-<!-- Include end CLI -->
-
-<!-- Include start installing -->
-## Installing from package
-
-`distrobuilder` is available from the [Snap Store](https://snapcraft.io/distrobuilder).
-
-```
-sudo snap install distrobuilder --classic
+git clone https://github.com/Interested-Deving-1896/distrobuilder.git
+cd distrobuilder
 ```
 
-## Installing from source
+## Usage
 
-To compile `distrobuilder` from source, first install the Go programming language, and some other dependencies.
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-- Debian-based:
-    ```
-    sudo apt update
-    sudo apt install -y golang-go gcc debootstrap rsync gpg squashfs-tools git make build-essential libwin-hivex-perl wimtools genisoimage
-    ```
+## Configuration
 
-- ArchLinux-based:
-    ```
-    sudo pacman -Syu
-    sudo pacman -S go gcc debootstrap rsync gnupg squashfs-tools git make hivex cdrtools wimlib --needed
-    ```
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-- Red Hat-based:
-    ```
-	sudo dnf check-update
-    sudo dnf install golang gcc debootstrap rsync gnupg2 squashfs-tools git make hivex genisoimage
-    ```
+## CI
 
-NOTE: Distrobuilder requires Go 1.21 or higher, if your distribution doesn't have a recent enough version available, [get it from upstream](https://go.dev/doc/install).
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Second, download the source code of the `distrobuilder` repository (this repository).
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/distrobuilder`](https://github.com/Interested-Deving-1896/distrobuilder) and mirrored through:
 
 ```
-mkdir -p $HOME/go/src/github.com/lxc/
-cd $HOME/go/src/github.com/lxc/
-git clone https://github.com/lxc/distrobuilder
+Interested-Deving-1896/distrobuilder  ──►  OpenOS-Project-OSP/distrobuilder  ──►  OpenOS-Project-Ecosystem-OOC/distrobuilder
 ```
 
-Third, enter the directory with the source code of `distrobuilder` and run `make` to compile the source code. This will generate the executable program `distrobuilder`, and it will be located at `$HOME/go/bin/distrobuilder`.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-```
-cd ./distrobuilder
-make
-```
+## Contributors
 
-Finally, you can run `distrobuilder` as follows.
-```
-$HOME/go/bin/distrobuilder
-```
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-You may also add the directory `$HOME/go/bin/` to your $PATH so that you do not need to run the command with the full path.
+## Origins
 
-## Runtime dependencies for building VM images
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-If you intend to build Incus VM images (via `distrobuilder build-incus --vm`),
-your system will need certain tools installed:
+## Resources
 
-- Debian-based:
-    ```
-    sudo apt update
-    sudo apt install -y btrfs-progs dosfstools qemu-kvm
-    ```
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-<!-- Include end installing -->
+## License
 
-## How to use
-
-See [How to use `distrobuilder`](doc/howto/build.md) for instructions.
-
-## Troubleshooting
-
-See [Troubleshoot `distrobuilder`](doc/howto/troubleshoot.md).
+<!-- AI:start:license -->
+[Apache-2.0](https://github.com/Interested-Deving-1896/distrobuilder/blob/main/COPYING) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
