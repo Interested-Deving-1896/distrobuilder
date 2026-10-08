@@ -55,7 +55,38 @@ Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-
 ## Contributors
 
 <!-- AI:start:contributors -->
-_Contributors pending._
+| Contributor | Commits |
+|---|---|
+| [@monstermunchkin](https://github.com/monstermunchkin) | 823 |
+| [@stgraber](https://github.com/stgraber) | 807 |
+| [@simondeziel](https://github.com/simondeziel) | 32 |
+| [@nanjj](https://github.com/nanjj) | 23 |
+| [@masnax](https://github.com/masnax) | 23 |
+| [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) | 20 |
+| [@brauner](https://github.com/brauner) | 13 |
+| [@mjrider](https://github.com/mjrider) | 11 |
+| [@gibmat](https://github.com/gibmat) | 10 |
+| [@tew42](https://github.com/tew42) | 10 |
+| [@chaosoffire](https://github.com/chaosoffire) | 9 |
+| [@stefanor](https://github.com/stefanor) | 6 |
+| [@hallyn](https://github.com/hallyn) | 5 |
+| [@adamcstephens](https://github.com/adamcstephens) | 5 |
+| [@nbuwe](https://github.com/nbuwe) | 5 |
+| [@Obirvalger](https://github.com/Obirvalger) | 5 |
+| [@geaaru](https://github.com/geaaru) | 4 |
+| [@eddyg](https://github.com/eddyg) | 3 |
+| [@tenforward](https://github.com/tenforward) | 3 |
+| [@marcosps](https://github.com/marcosps) | 3 |
+| [@stiltr](https://github.com/stiltr) | 3 |
+| [@timbretimber](https://github.com/timbretimber) | 3 |
+| [@foxtrotcz](https://github.com/foxtrotcz) | 3 |
+| [@jadjay](https://github.com/jadjay) | 2 |
+| [@pkking](https://github.com/pkking) | 2 |
+| [@lkundrak](https://github.com/lkundrak) | 2 |
+| [@MoritzMaxeiner](https://github.com/MoritzMaxeiner) | 2 |
+| [@petermichaux](https://github.com/petermichaux) | 2 |
+| [@Re4son](https://github.com/Re4son) | 2 |
+| [@salmanxmoha](https://github.com/salmanxmoha) | 2 |
 <!-- AI:end:contributors -->
 
 ## Origins
@@ -70,6 +101,8 @@ _Original project — no upstream influences recorded._
 _No additional resource files found._
 <!-- AI:end:resources -->
 
+## Accessibility
+
 <!-- AI:start:accessibility -->
 This repo uses automated accessibility auditing via `check-accessibility.yml`.
 
@@ -81,7 +114,8 @@ WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (lib
 
 Run the [Check Accessibility](https://github.com/Interested-Deving-1896/distrobuilder/actions/workflows/check-accessibility.yml)
 workflow to generate the first report and accessibility artifacts.
-See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/distrobuilder/blob/main/DOCS/accessibility.md) for the full reference.
+See the [W3C Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+for the underlying accessibility reference.
 <!-- AI:end:accessibility -->
 
 ## License
